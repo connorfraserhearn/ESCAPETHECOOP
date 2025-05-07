@@ -27,8 +27,6 @@ public class harmer_patrol : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(current_position, target_position, speed * Time.deltaTime);
 
-        Debug.Log("Moving to: " + target_point.name + " Current X: " + current_position.x + " Target X: " + target_position.x);
-
         // Check if the farmer has reached the target point
         if (Mathf.Approximately(transform.position.x, target_position.x))
         {
