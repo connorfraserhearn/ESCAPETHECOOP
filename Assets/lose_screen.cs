@@ -24,8 +24,7 @@ public class lose_screen : MonoBehaviour
         if (other.CompareTag("HARMER"))
         {
             Time.timeScale = 0f;
-            int estimated_murders = Mathf.FloorToInt(game_stats_timer.time_played * 100000);
-            stat_text.text = $"Estimated real world victims while you played: {estimated_murders}";
+            stat_text.text = game_stats_timer.get_victims();
             lose_panel.SetActive(true);
         }
     }

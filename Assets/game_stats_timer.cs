@@ -19,4 +19,9 @@ public class game_stats_timer : MonoBehaviour
         }
     }
     public static float time_played = 0f;
+    public static string get_victims()
+    {
+        int estimated_murders = Mathf.FloorToInt(game_stats_timer.time_played * 100000);
+        return $"ESTIMATED REAL WORLD VICTIMS WHILE YOU PLAYED: {estimated_murders}";
+    }
 }

@@ -26,6 +26,7 @@ public class win_screen : MonoBehaviour
         {
             Debug.Log("ESCAPED");
             Time.timeScale = 0f; // Freeze game
+            stat_text.text = game_stats_timer.get_victims();
             win_panel.SetActive(true);
         }
     }
@@ -35,4 +36,5 @@ public class win_screen : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public Text stat_text;
 }
