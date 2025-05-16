@@ -1,0 +1,9 @@
+ESCAPETHECOOP is a 2D survival game made in Unity (2022.3.3.39f1) using C#, implementing object-oriented programming, including inheritance and polymorphism. The player is a chicken who must survive for five minutes while being chased by enemies. After this time, the gate unlocks and the player can escape. The game includes an animal liberation theme and even displays a statistic showing the real world number of animals who were slaughtered during gameplay.
+
+Arrow keys are WASD are used for movement. The space key is used for shooting.
+
+There is one playable level. There is a title, win and lose screen. Enemies follow and attempt the catch the player. Eggs can be fired by the player to destroy the enemies. There is a spawner system for enemies. Only five can exist at once. The timer is displayed on the screen. The win condition is surviving for five minutes. The lose condition is being caught by an enemy.
+
+Prefabs are used for all spawnable enemies.
+
+All required features from the assessment brief are implemented. The project includes the Unity project folder, the game design document and the development log.
