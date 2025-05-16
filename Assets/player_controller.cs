@@ -8,6 +8,9 @@ public class player_controller : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 move_input;
+
+    public Transform fire_point;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,11 @@ public class player_controller : MonoBehaviour
         float move_y = Input.GetAxisRaw("Vertical");
 
         move_input = new Vector2(move_x, move_y).normalized;
+
+        if (move_input != Vector2.zero)
+        {
+            fire_point.right = move_input;
+        }
     }
 
     void FixedUpdate()

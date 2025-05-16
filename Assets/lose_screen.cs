@@ -21,7 +21,7 @@ public class lose_screen : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("HARMER"))
+        if (other.CompareTag("ENEMY"))
         {
             Time.timeScale = 0f;
             stat_text.text = game_stats_timer.get_victims();
