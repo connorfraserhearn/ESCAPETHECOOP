@@ -21,7 +21,6 @@ public class unlock_gate : MonoBehaviour
         if (game_stats_timer.time_played >= unlock_time)
         {
             gate_collider.enabled = true;
-            // Optional: change sprite or flash to show it's now unlocked
         }   
     }
 
