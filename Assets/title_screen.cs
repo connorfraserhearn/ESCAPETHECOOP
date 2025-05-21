@@ -8,7 +8,7 @@ public class title_screen : MonoBehaviour
     void Start()
     {
         game_stats_timer.time_played = 0f;
-        Time.timeScale = 0f; // Pause the game until Start is pressed
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
