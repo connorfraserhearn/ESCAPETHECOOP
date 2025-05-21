@@ -25,7 +25,7 @@ public class win_screen : MonoBehaviour
         if (other.CompareTag("EXIT"))
         {
             Debug.Log("ESCAPED");
-            Time.timeScale = 0f; // Freeze game
+            Time.timeScale = 0f;
             stat_text.text = game_stats_timer.get_victims();
             win_panel.SetActive(true);
         }
